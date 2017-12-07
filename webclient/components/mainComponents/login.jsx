@@ -41,16 +41,16 @@ reducepoints(){
             <Image src='../image/male1.jpg' />
             <Card.Content>
               <Card.Header>
-                Claire
+                Name : Claire
               </Card.Header>
               <Card.Meta>
                 <span className='date'>
-                  Silver(silver++)
+                  Membership : Silver(silver++)
                 </span>
               </Card.Meta>
               <Card.Description>
-                Avis Preferred Points : {this.state.avis} points
-                South west rapid Rewards : {this.state.southWest} points
+                <p>Avis Preferred Points : {this.state.avis} points</p>
+                <p>South west rapid Rewards : {this.state.southWest} points</p>
               </Card.Description>
             </Card.Content>
           </Card>
