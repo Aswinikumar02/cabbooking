@@ -8,26 +8,19 @@ export default class Login extends React.Component {
   constructor() {
     super();
     this.state = {
-      avis : 20000,
-      southWest : 10000,
+      avis : 10000,
+      southWest : 5000,
       avisPoint: '',
       southPoint: ''
     }
     this.reducepoints= this.reducepoints.bind(this);
   }
-componentDidMount(){
+componentWillMount(){
   this.reducepoints();
 }
 reducepoints(){
-  if(window.reload){
-    const Avis = this.state.avis;
-    const SouthWest = this.state.southWest;
-    this.setState({avis:Avis,southWest:SouthWest},function(){
-      console.log('avis points final',this.state.avis);
-      console.log('south points final',this.state.southWest);
-    })
-  }
-  else if(window.onload)
+
+  if(location.reload)
   {
       const Avis = this.state.avis - 1000;
       const SouthWest = this.state.southWest + 2000;
